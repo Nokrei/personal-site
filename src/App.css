@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+.mainPage {
+  background-color: #00171f;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+}
+.navigation {
+  justify-self: center;
+  width: 70%;
+  background-color: #00171f;
+  z-index: 99;
+  top:0px;
+  position: fixed;
+  margin-left:15%;
+  opacity: 0.8
+}
+.titleBar {
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.titleBar--name {
+  margin-left: 3em;
+}
+.titleBar--nav {
+  justify-self: right;
+  display: flex;
+  margin-right: 3em;
+}
+.titleBar--nav p {
+  display: block;
+  padding: 1em 1em 0 1em;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.titleBar--nav-bordered {
+  border-left: 1px solid #DE7119;
+  border-right: 1px solid #DE7119;
+}
+.titleBar--nav p:hover {
+  background-color: white;
+  color: #00171f;
+  cursor: pointer;
+}
+.line {
+  margin-top: 2em;
+  height: 0.2em;
+  background-color: #DE7119;
+  z-index: 99;
+  width: 95%;
+  margin-left: 2.5%;
+}
+.line2{
+  width:80%;
+  justify-self: center;
+  margin:0;
+}
+.mainPage--content {
+  justify-self: center;
+  width:70%;
+  margin-left: 0.4em;
+  font-size: 6em;
+}
+.mainPage--content :nth-child(1){
+  animation-name: load;
+  animation-duration: 10s;
+}
+.mainPage--content :nth-child(3){
+  opacity:0;
+  animation-name: load;
+  animation-duration: 10s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+.mainPage--content :nth-child(5){
+  opacity:0;
+  animation-name: load;
+  animation-duration: 10s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.particles{
+  position: absolute;
+}
+.statPage {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  font-size: 4em;
+  text-align: center;
+}
+
+@keyframes load {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.statPage :nth-child(1) {
+  animation-name: load;
+  animation-duration: 3s;
+  width: 100%;
+  text-align: center;
+}
+button{
+  background-color: white;
+  z-index: 99;
+}
+.statPage :nth-child(2) {
+  animation-name: load;
+  animation-duration: 3s;
+  width: 100%;
+  text-align: center;
+}
+.statPage--number {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.descPage {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding-top:5em;
+  background: linear-gradient(#00171f,#00adb5,#00171f ) ;
+}
+.descPage h1 {
+  padding-top: 3em;
+  text-align: center;
+  font-size: 3em;
+}
+.descPage--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+  text-align: center;
+  font-size: 1.7em;
+  width:70%;
+  justify-self:center;
+}
