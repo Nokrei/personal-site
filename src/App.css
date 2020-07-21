@@ -18,10 +18,10 @@
   width: 70%;
   background-color: #00171f;
   z-index: 99;
-  top:0px;
+  top: 0px;
   position: fixed;
-  margin-left:15%;
-  opacity: 0.8
+  margin-left: 15%;
+  opacity: 0.8;
 }
 .titleBar {
   padding-top: 1em;
@@ -43,8 +43,8 @@
   cursor: pointer;
 }
 .titleBar--nav-bordered {
-  border-left: 1px solid #DE7119;
-  border-right: 1px solid #DE7119;
+  border-left: 1px solid #de7119;
+  border-right: 1px solid #de7119;
 }
 .titleBar--nav p:hover {
   background-color: white;
@@ -54,41 +54,41 @@
 .line {
   margin-top: 2em;
   height: 0.2em;
-  background-color: #DE7119;
+  background-color: #de7119;
   z-index: 99;
   width: 95%;
   margin-left: 2.5%;
 }
-.line2{
-  width:80%;
+.line2 {
+  width: 80%;
   justify-self: center;
-  margin:0;
+  margin: 0;
 }
 .mainPage--content {
   justify-self: center;
-  width:70%;
+  width: 70%;
   margin-left: 0.4em;
   font-size: 6em;
 }
-.mainPage--content :nth-child(1){
+.mainPage--content :nth-child(1) {
   animation-name: load;
   animation-duration: 10s;
 }
-.mainPage--content :nth-child(3){
-  opacity:0;
+.mainPage--content :nth-child(3) {
+  opacity: 0;
   animation-name: load;
   animation-duration: 10s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
 }
-.mainPage--content :nth-child(5){
-  opacity:0;
+.mainPage--content :nth-child(5) {
+  opacity: 0;
   animation-name: load;
   animation-duration: 10s;
   animation-delay: 1s;
   animation-fill-mode: forwards;
 }
-.particles{
+.particles {
   position: absolute;
 }
 .statPage {
@@ -114,10 +114,7 @@
   width: 100%;
   text-align: center;
 }
-button{
-  background-color: white;
-  z-index: 99;
-}
+
 .statPage :nth-child(2) {
   animation-name: load;
   animation-duration: 3s;
@@ -131,8 +128,8 @@ button{
 .descPage {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  padding-top:5em;
-  background: linear-gradient(#00171f,#00adb5,#00171f ) ;
+  padding-top: 5em;
+  background: linear-gradient(#00171f, #00adb5, #00171f);
 }
 .descPage h1 {
   padding-top: 3em;
@@ -145,6 +142,13 @@ button{
   grid-column-gap: 1em;
   text-align: center;
   font-size: 1.7em;
-  width:70%;
-  justify-self:center;
+  width: 70%;
+  justify-self: center;
+}
+.navigation.shadow {
+  box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
+}
+
+.navigation.hidden {
+  transform: translateY(-110%);
 }
