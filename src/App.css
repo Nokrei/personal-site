@@ -129,7 +129,7 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
   padding-top: 5em;
-  background: linear-gradient(#00171f, #00adb5, #00171f);
+  background-color: #001c25;
 }
 .descPage h1 {
   padding-top: 3em;
@@ -151,4 +151,53 @@
 
 .navigation.hidden {
   transform: translateY(-110%);
+}
+.portfolio{
+  color:white;
+  background-color:#001c25 ;
+}
+.portfolio h2{
+  font-size:7em;
+  text-align: center;
+  margin-bottom: 1em
+}
+.portfolio__container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.portfolio__container--project{
+  text-align: center;
+}
+.portfolio__container--project--image{
+  max-width:30em;
+  max-height:13em;
+}
+.contact {
+  color:white;
+  background-color: #00171f ;
+  text-align: center;
+}
+.contact input {
+  background-color: white;
+  width:20em;
+  padding:1em;
+  margin-bottom:10px
+}
+.contact textarea{
+  background-color: white;
+  width:20em;
+  height:10em;
+  resize: none;
+  outline: none;
+  padding:1em;
+}
+button{
+  border:1px solid #de7119;
+  padding:1em;
+  width:10em;
+  border-radius: 10px;
+  color:white;
+}
+button:hover{
+  background-color: #de7119;
 }

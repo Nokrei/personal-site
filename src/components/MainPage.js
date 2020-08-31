@@ -4,7 +4,7 @@ import Header from './Header';
 
 const MainPage = () => {
   return (
-    <div className="mainPage">
+    <div className="mainPage" id='mainPage'>
       <Particles
         style={{ position: 'absolute' }}
         params={{
@@ -49,10 +49,10 @@ const MainPage = () => {
       />
 
       <Header/>
-
+       
       <div className="mainPage--content">
-        <span>Custom created</span> <br />
-        <span>business</span> <br /> <span>transformations</span>
+        <span>Web development</span> <br />
+        <span>with</span> <br /> <span>a passion</span>
       </div>
     </div>
   );
