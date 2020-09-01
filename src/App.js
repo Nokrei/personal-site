@@ -5,6 +5,7 @@ import StatPage from './components/StatPage';
 import DescPage from './components/DescPage';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import Footer from './components/Footer'
 const App = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ const App = () => {
       </LazyLoad>
       <Portfolio />
       <Contact />
+      <Footer/>
     </div>
   );
 };

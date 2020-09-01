@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Nanum+Gothic&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +7,8 @@
   outline: 0;
   vertical-align: baseline;
   background: transparent;
+  scroll-behavior: smooth;
+  
 }
 .mainPage {
   background-color: #00171f;
@@ -12,6 +16,7 @@
   height: 100vh;
   width: 100%;
   display: grid;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 .navigation {
   justify-self: center;
@@ -22,6 +27,7 @@
   position: fixed;
   margin-left: 15%;
   opacity: 0.8;
+  font-family: 'Lora', serif;
 }
 .titleBar {
   padding-top: 1em;
@@ -41,6 +47,11 @@
   padding: 1em 1em 0 1em;
   transition-duration: 0.3s;
   cursor: pointer;
+  
+}
+.titleBar--nav a{
+  text-decoration: none;
+  color:inherit;
 }
 .titleBar--nav-bordered {
   border-left: 1px solid #de7119;
@@ -93,11 +104,16 @@
 }
 .statPage {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
   font-size: 4em;
   text-align: center;
+  background-color: #00171f;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 @keyframes load {
@@ -130,11 +146,16 @@
   grid-template-rows: 1fr 1fr;
   padding-top: 5em;
   background-color: #001c25;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 .descPage h1 {
   padding-top: 3em;
   text-align: center;
   font-size: 3em;
+  
 }
 .descPage--container {
   display: grid;
@@ -155,15 +176,21 @@
 .portfolio{
   color:white;
   background-color:#001c25 ;
+  display:grid;
+  padding: 5em 0 10em 0;
+  font-family: 'Nanum Gothic', sans-serif;
 }
-.portfolio h2{
-  font-size:7em;
+.portfolio h1{
+  font-size:3em;
   text-align: center;
   margin-bottom: 1em
 }
 .portfolio__container{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
+  width:70%;
+  justify-self: center;
+  grid-column-gap: 1em;
 }
 .portfolio__container--project{
   text-align: center;
@@ -172,10 +199,28 @@
   max-width:30em;
   max-height:13em;
 }
+.portfolio__container--project--tech{
+  max-height: 3em;
+}
+.tech p{
+  padding-bottom:1em;
+}
+.tech__images{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
 .contact {
   color:white;
   background-color: #00171f ;
   text-align: center;
+  height: 100vh;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.contact h1 {
+  font-size: 3em;
+  padding-top:5em;
+  margin-bottom:10px;
 }
 .contact input {
   background-color: white;
@@ -191,13 +236,91 @@
   outline: none;
   padding:1em;
 }
-button{
+.contact__button{
   border:1px solid #de7119;
   padding:1em;
   width:10em;
   border-radius: 10px;
   color:white;
+  margin-top:1em;
 }
-button:hover{
+.contact__button:hover{
   background-color: #de7119;
+}
+footer{
+  color:white;
+  background-color: #00171f;
+  text-align:center;
+  padding:2em 0 2em 0;
+  display:grid;
+  font-family: 'Lora', serif;
+
+}
+.footer__icons{
+  margin-top:0.5em;
+}
+.footer__icons--icon{
+  height:2em;
+}
+.footer__icons :nth-child(1){
+  margin-right:10px;
+}
+@media only screen and (max-width:600px){
+  .navigation{
+    width:100%;
+    margin:0px;
+    text-align: center;
+  }
+  .titleBar--nav{
+    display: grid;
+  }
+  .titleBar--nav p{
+    padding: 0.5em;
+  }
+  .titleBar--name{
+    text-align: center;
+    padding:0px;
+    
+  }
+  .titleBar--nav-bordered {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #de7119;
+    border-bottom: 1px solid #de7119
+  }
+  .mainPage--content{
+    font-size: 4em;
+    margin: 0px;
+    width:100%;
+    text-align: center;
+  }
+  .descPage{
+    grid-template-rows: 1fr 2fr;
+  }
+  .descPage h1{
+    font-size: 2em;
+  }
+  .descPage--container{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr)
+  }
+  .statPage{
+    font-size:2em;
+    grid-template-rows: repeat(3. 1fr);
+  }
+  .portfolio__container{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+  }
+  .portfolio__container--project--image{
+    max-width: 25em;
+  }
+  .tech{
+    background-color: #00171f;
+    padding: 1em 0 1em 0;
+  }
+  .tech__images{
+    margin-bottom:1em;
+  }
 }

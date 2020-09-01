@@ -3,14 +3,18 @@ import useInterval from './useInterval';
 import Counter from './Counter';
 const StatPage = () => {
   return (
-    <div className='statPage mainPage'>
+    <div className='statPage '>
+      <div>
       <Counter
         delay={1}
         max={4648118067}
         inc={19123456}
         text2= " People use the internet"
       />
-       <Counter
+      </div>
+     
+      <div>
+      <Counter
       delay = {25}
       max = {90} 
       inc = {1}
@@ -18,6 +22,8 @@ const StatPage = () => {
       text2 = 'Use it on mobile devices'
     
     />
+      </div>
+       
     <p>They are your potential <br></br> Customers</p>
     </div>
   );
