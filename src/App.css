@@ -275,7 +275,7 @@ footer {
 .footer__icons :nth-child(1) {
   margin-right: 10px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .navigation {
     width: 100%;
     margin: 0px;
@@ -329,15 +329,16 @@ footer {
   }
   
   .project{
-    height: 15em;
-    width:28em;
+    height: 13em;
+    width:26em;
     display:grid;
     justify-content: center;
     align-items: center;
+    justify-self: center;
   }
   .portfolio__container--project--image {
-    height: 14em;
-    width:27em;
+    height: 12em;
+    width:25em;
   }
   .tech {
     
@@ -345,12 +346,12 @@ footer {
     padding: 1em 0 1em 0;
   }
   .tech__desc{
-    width:27em;
+    width:25em;
     text-align: justify;
     justify-self: center;
   }
   .tech__content{
-    width:27em;
+    width:25em;
     justify-self: center;
   }
   .tech__images {

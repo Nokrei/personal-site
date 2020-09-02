@@ -66,7 +66,7 @@ const Portfolio = () => {
               <br />
               <p>
               A weather web application. Initially it uses the locationiq API
-                to detect users position and display the weather for that
+                to detect user's position and display the weather for that
                 location. It also uses the openweather API to display the
                 weather forecast for any location searched by the user. Number
                 of searches limited due to using free variants of the APIs.
@@ -123,7 +123,7 @@ const Portfolio = () => {
                 acheved via the implementation of a custom React hook, the
                 layout and loading-in animation by the use of the StackGrid
                 library. Number of searches limited due to using the free
-                variant of the Unspash API.
+                variant of the Unsplash API.
               </p>
                 
               
