@@ -89,12 +89,13 @@ const Portfolio = () => {
                 />
                 <img
                   className="portfolio__container--project--tech"
-                  src={npm}
+                  src={rlogo}
                 />
                 <img className="portfolio__container--project--tech" src={js} />
+                
                 <img
                   className="portfolio__container--project--tech"
-                  src={rlogo}
+                  src={npm}
                 />
                 
               </div>
@@ -145,12 +146,13 @@ const Portfolio = () => {
                 />
                 <img
                   className="portfolio__container--project--tech"
-                  src={npm}
+                  src={rlogo}
                 />
                 <img className="portfolio__container--project--tech" src={js} />
+                
                 <img
                   className="portfolio__container--project--tech"
-                  src={rlogo}
+                  src={npm}
                 />
                 
               </div>
