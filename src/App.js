@@ -1,6 +1,7 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
 import MainPage from './components/MainPage';
+import ToTop from './components/ToTop'
 import StatPage from './components/StatPage';
 import DescPage from './components/DescPage';
 import Portfolio from './components/Portfolio';
@@ -9,7 +10,9 @@ import Footer from './components/Footer'
 const App = () => {
   return (
     <div>
+      <ToTop/>
       <MainPage />
+      
       <DescPage />
       <LazyLoad height={200} once>
         <StatPage />
@@ -17,6 +20,7 @@ const App = () => {
       <Portfolio />
       <Contact />
       <Footer/>
+      
     </div>
   );
 };

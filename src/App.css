@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,13 @@
   vertical-align: baseline;
   background: transparent;
   scroll-behavior: smooth;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s;
+    transition-delay: background-color 5000s, color 5000s;
 }
 .mainPage {
   background-color: #00171f;
@@ -111,7 +119,7 @@
   color: white;
   height: 100vh;
   width: 100%;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 @keyframes load {
@@ -147,7 +155,7 @@
   background-color: #001c25;
   color: white;
   width: 100%;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .descPage h1 {
   padding-top: 3em;
@@ -156,7 +164,7 @@
 }
 .descPage--container {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 1em;
   text-align: center;
   font-size: 1.7em;
@@ -175,7 +183,7 @@
   background-color: #001c25;
   display: grid;
   padding: 5em 0 10em 0;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .portfolio h1 {
   font-size: 3em;
@@ -193,9 +201,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #00171f;
-  
 }
-.project{
+.project {
   height: 20em;
   width: 40em;
 }
@@ -211,8 +218,13 @@
   grid-template-rows: 1fr 1fr;
 }
 
-.tech__content{
+.tech__content {
   justify-self: left;
+}
+.tech__desc a{
+  text-decoration: underline;
+  color: white;
+  font-size: 1.5em
 }
 
 .tech__images {
@@ -222,31 +234,28 @@
   align-items: center;
 }
 .contact {
-  color: white;
+  display: grid;
+  grid-template-rows: 1fr 1fr ;
+  color: white ;
   background-color: #00171f;
   text-align: center;
-  padding-bottom:10em;
-  font-family: 'Nanum Gothic', sans-serif;
+  padding-bottom: 10em;
+  font-family: 'Roboto', sans-serif;
+  justify-items: center;
 }
 .contact h1 {
   font-size: 3em;
   padding-top: 5em;
   margin-bottom: 10px;
 }
-.contact input {
-  background-color: white;
-  width: 20em;
-  padding: 1em;
-  margin-bottom: 10px;
+.contact :nth-child(2){
+  display: grid;
+  grid-template-rows: repeat(1fr 1fr 3fr);
+  color: white;
+  width:21em;
+  
 }
-.contact textarea {
-  background-color: white;
-  width: 20em;
-  height: 10em;
-  resize: none;
-  outline: none;
-  padding: 1em;
-}
+
 .contact__button {
   border: 1px solid #de7119;
   padding: 1em;
@@ -254,9 +263,12 @@
   border-radius: 10px;
   color: white;
   margin-top: 1em;
+  justify-self: center;
+  transition-duration: 250ms;
 }
 .contact__button:hover {
   background-color: #de7119;
+  cursor: pointer;
 }
 footer {
   color: white;
@@ -265,9 +277,8 @@ footer {
   padding: 2em 0 2em 0;
   display: grid;
   font-family: 'Lora', serif;
-  width:100%;
+  width: 100%;
   height: 5em;
-  
 }
 .footer__icons {
   margin-top: 0.5em;
@@ -315,10 +326,10 @@ footer {
   .descPage--container {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
-    grid-row-gap:2em;
+    grid-row-gap: 2em;
   }
-  .descPage--container :nth-child(4){
-    padding-bottom:2em;
+  .descPage--container :nth-child(4) {
+    padding-bottom: 2em;
   }
   .statPage {
     font-size: 2em;
@@ -329,43 +340,41 @@ footer {
     grid-template-rows: repeat(3, 1fr);
     justify-content: center;
   }
-  .portfolio__container--project{
-    grid-template-columns:1fr;
-    border: 1px solid #de7119
-    
+  .portfolio__container--project {
+    grid-template-columns: 1fr;
+    border: 1px solid #de7119;
   }
-  
-  .project{
+
+  .project {
     height: 10em;
-    width:23em;
-    display:grid;
+    width: 23em;
+    display: grid;
     justify-content: center;
     align-items: center;
     justify-self: center;
   }
   .portfolio__container--project--image {
     height: 9em;
-    width:22em;
+    width: 22em;
   }
   .tech {
-    
     background-color: #00171f;
     padding: 1em 0 1em 0;
   }
-  .tech__desc{
-    width:22em;
+  .tech__desc {
+    width: 22em;
     text-align: justify;
     justify-self: center;
   }
-  .tech__content{
-    width:22em;
+  .tech__content {
+    width: 22em;
     justify-self: center;
   }
   .tech__images {
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows:1fr ;
-    grid-row-gap:1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-row-gap: 1em;
     margin-bottom: 1em;
   }
 }
