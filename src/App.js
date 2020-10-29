@@ -20,7 +20,7 @@ const App = () => {
       </LazyLoad>
       <Portfolio />
       <Contact />
-      <CookieConsent enableDeclineButton>This website uses cookies to enhance the user experience.</CookieConsent>
+      <CookieConsent >This website uses cookies to enhance the user experience.</CookieConsent>
       <Footer/>
       
     </div>
