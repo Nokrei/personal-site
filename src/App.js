@@ -6,7 +6,8 @@ import StatPage from './components/StatPage';
 import DescPage from './components/DescPage';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-import Footer from './components/Footer'
+import Footer from './components/Footer';
+import CookieConsent, {Cookies} from 'react-cookie-consent';
 const App = () => {
   return (
     <div>
@@ -19,6 +20,7 @@ const App = () => {
       </LazyLoad>
       <Portfolio />
       <Contact />
+      <CookieConsent enableDeclineButton>This website uses cookies to enhance the user experience.</CookieConsent>
       <Footer/>
       
     </div>
