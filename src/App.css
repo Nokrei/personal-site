@@ -339,6 +339,7 @@ footer {
   .mainPage--content {
     font-size: 4em;
     margin: 0px;
+    margin-top: 5em;
     width: 100%;
     text-align: center;
   }
