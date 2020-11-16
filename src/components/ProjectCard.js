@@ -18,7 +18,7 @@ const ProjectCard = (props) => {
             <br />
           </a>
           <br />
-          <p className='portfolio__container--desc'style={{maxHeight:'6em', overflowY:'scroll',}}>{props.desc}</p>
+          <p className='portfolio__container--desc'style={{ overflowY:'scroll',}}>{props.desc}</p>
         </div>
 
         <div className="tech__content">

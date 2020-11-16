@@ -25,6 +25,9 @@ input:-webkit-autofill:active {
   display: grid;
   font-family: 'Nanum Gothic', sans-serif;
 }
+.mainPage--content{
+  text-align: center;
+}
 .navigation {
   justify-self: center;
   width: 70%;
@@ -215,6 +218,7 @@ input:-webkit-autofill:active {
 }
 .portfolio__container--desc{
   scrollbar-width: thin;
+  max-height: 6em;
 }
 .portfolio__container--desc::-webkit-scrollbar{
   width:12px
@@ -382,6 +386,9 @@ footer {
   .portfolio__container--project--image {
     height: 9em;
     width: 22em;
+  }
+  .portfolio__container--desc{
+    max-height: 8em;
   }
   .tech {
     background-color: #00171f;
