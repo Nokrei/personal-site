@@ -4,6 +4,8 @@ import diving from '../images/diving-project.png';
 import documentation from '../images/documentation.png';
 import weather from '../images/weather.png';
 import unsplash from '../images/unsplash.png';
+import fitness from '../images/fitness.png';
+import bookSearch from '../images/bookSearch.png';
 import html from '../images/html-logo.png';
 import css from '../images/css-logo.png';
 import npm from '../images/npm-logo.png';
@@ -19,6 +21,44 @@ const Portfolio = () => {
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
       <div className="portfolio__container">
+      <ProjectCard
+          title="Book Search App"
+          desc="A Book search application.The user can search by title, author or ISBN. They can then click on the author's name and go to the writer's details page, where they can also see all the author's books.
+          The Goodreads API powering the search gave me some problems - the response is in XML so I had to parse it to JSON, they do not include the CORS header in ANY of their API calls, so I had to route the request through cors-anywhere.herokuapp, and it has a rate limit of one request per second, that's why I didn't make the results load with every key stroke, also I have spent about half a day in total resetting the API key, and waiting for it to let me use it again - been getting the 429 error a lot while testing calls. "
+          link="https://pm-goodreads-app.netlify.app/"
+          image={bookSearch}
+          stack1={html}
+          stack2={css}
+          stack3={rlogo}
+          stack4={js}
+          stack5={npm}
+          stack6={webpackLogo}
+          tooltip1="HTML5"
+          tooltip2="CSS3"
+          tooltip3="ReactJS"
+          tooltip4="JavaScript"
+          tooltip5="NPM"
+          tooltip6="Webpack"
+        />
+        <ProjectCard
+          title="Fitness App"
+          desc="A Fitness Application. It is composed of a variety of fitness calculators such as BMI, BMR, Body Fat Percentage. The user can also calculate calories spent during exercise and meal macronutrients.
+          I made the App using ReactJS, majority of the styling is done with the use of Material UI. The responsiveness is executed via a custom hook."
+          link="https://nok-fitness.netlify.app/"
+          image={fitness}
+          stack1={html}
+          stack2={css}
+          stack3={rlogo}
+          stack4={js}
+          stack5={npm}
+          stack6={webpackLogo}
+          tooltip1="HTML5"
+          tooltip2="CSS3"
+          tooltip3="ReactJS"
+          tooltip4="JavaScript"
+          tooltip5="NPM"
+          tooltip6="Webpack"
+        />
         <ProjectCard
           title="Diving Center website"
           desc="The final team project for my full-stack coding bootcamp. "

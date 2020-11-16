@@ -213,6 +213,12 @@ input:-webkit-autofill:active {
 .portfolio__container--project--tech {
   height: 3em;
 }
+.portfolio__container--desc{
+  scrollbar-width: thin;
+}
+.portfolio__container--desc::-webkit-scrollbar{
+  width:12px
+}
 .tech {
   display: grid;
   grid-template-rows: 2fr 1fr;
