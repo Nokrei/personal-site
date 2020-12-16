@@ -32,7 +32,7 @@ input:-webkit-autofill:active {
   height: 60em;
   width: 100%;
   display: grid;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .mainPage--content{
   text-align: center;
@@ -124,7 +124,8 @@ input:-webkit-autofill:active {
   background-color: var(--backBright);
   color: var(--darkText);
   display: grid;
-  height: 60em
+  height: 60em;
+  font-family: 'Roboto', sans-serif;
 }
 .aboutPage__container {
   max-width: 70%;
@@ -142,7 +143,7 @@ input:-webkit-autofill:active {
   text-align: left;
 }
 .personalPic {
-  min-height: 22em;
+  min-height: 23em;
   
 }
 .statPage {
