@@ -1,28 +1,30 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
 import MainPage from './components/MainPage';
-import ToTop from './components/ToTop'
+import ToTop from './components/ToTop';
 import StatPage from './components/StatPage';
+import AboutPage from './components/AboutPage';
 import DescPage from './components/DescPage';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import CookieConsent, {Cookies} from 'react-cookie-consent';
+import CookieConsent, { Cookies } from 'react-cookie-consent';
 const App = () => {
   return (
     <div>
-      <ToTop/>
+      <ToTop />
       <MainPage />
-      
+      <AboutPage />
       <DescPage />
-      <LazyLoad height={200} once>
+      <LazyLoad height={1000} once offset={100}>
         <StatPage />
       </LazyLoad>
       <Portfolio />
       <Contact />
-      <CookieConsent >This website uses cookies to enhance the user experience.</CookieConsent>
-      <Footer/>
-      
+      <CookieConsent>
+        This website uses cookies to enhance the user experience.
+      </CookieConsent>
+      <Footer />
     </div>
   );
 };

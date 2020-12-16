@@ -55,8 +55,8 @@ const MainPage = () => {
       <Header/>
        
       <div className="mainPage--content">
-        <span>Web development</span> <br />
-        <span>with</span> <br /> <span>a passion</span>
+        <span>Web Development</span> <br />
+        <span>With</span> <br /> <span>a Passion</span>
       </div>
     </div>
   );

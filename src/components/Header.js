@@ -28,10 +28,10 @@ const Header = () => {
       <div className="titleBar">
         <div className="titleBar--name">
           <h1>Piotr Mrozowski</h1>
-          <p>web developer</p>
+          <p>Web Developer</p>
         </div>
         <nav className="titleBar--nav">
-          <p><a href='#mainPage'>About</a></p>
+          <p><a href='#aboutPage'>About</a></p>
           <p className="titleBar--nav-bordered"><a href='#portfolio'>Portfolio</a></p>
           <p><a href='#contact'>Contact</a></p>
         </nav>

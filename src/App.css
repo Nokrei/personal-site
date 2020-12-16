@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Nanum+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+:root {
+  --brightText: #a7a7a7;
+  --darkText: #4b4b4b;
+  --backBright: #dfdfdf;
+  --darkBlue: #00171f;
+  --brightBlue: #001c25;
+
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +27,8 @@ input:-webkit-autofill:active {
   transition-delay: background-color 5000s, color 5000s;
 }
 .mainPage {
-  background-color: #00171f;
-  color: white;
+  background-color: var(--darkBlue);
+  color: var(--brightText);
   height: 60em;
   width: 100%;
   display: grid;
@@ -31,7 +40,7 @@ input:-webkit-autofill:active {
 .navigation {
   justify-self: center;
   width: 70%;
-  background-color: #00171f;
+  background-color: var(--darkBlue);
   z-index: 99;
   top: 0px;
   position: fixed;
@@ -67,8 +76,8 @@ input:-webkit-autofill:active {
   border-right: 1px solid #de7119;
 }
 .titleBar--nav p:hover {
-  background-color: white;
-  color: #00171f;
+  background-color: var(--brightText);
+  color: var(--darkBlue);
   cursor: pointer;
 }
 .line {
@@ -111,6 +120,31 @@ input:-webkit-autofill:active {
 .particles {
   position: absolute;
 }
+.aboutPage {
+  background-color: var(--backBright);
+  color: var(--darkText);
+  display: grid;
+  height: 60em
+}
+.aboutPage__container {
+  max-width: 70%;
+  justify-self: center;
+  align-self: center;
+}
+.aboutPage__container h1{
+  font-size: 3em;
+}
+.aboutPage__content {
+  font-size: 1.7em;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-column-gap: 1em;
+  text-align: left;
+}
+.personalPic {
+  min-height: 22em;
+  
+}
 .statPage {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -118,8 +152,8 @@ input:-webkit-autofill:active {
   justify-items: center;
   font-size: 4em;
   text-align: center;
-  background-color: #00171f;
-  color: white;
+  background-color: var(--backBright);
+  color: var(--darkText);
   height: 100vh;
   width: 100%;
   font-family: 'Roboto', sans-serif;
@@ -153,12 +187,12 @@ input:-webkit-autofill:active {
 .descPage {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  grid-row-gap: 6em;
   padding-top: 5em;
-  background-color: #001c25;
-  color: white;
+  background-color: var(--brightBlue);
+  color: var(--brightText);
   width: 100%;
   font-family: 'Roboto', sans-serif;
+  height: 60em
 }
 .descPage h1 {
   padding-top: 3em;
@@ -182,8 +216,8 @@ input:-webkit-autofill:active {
   transform: translateY(-110%);
 }
 .portfolio {
-  color: white;
-  background-color: #001c25;
+  color: var(--brightText);
+  background-color: var(--brightBlue);
   display: grid;
   padding: 5em 0 10em 0;
   font-family: 'Roboto', sans-serif;
@@ -203,7 +237,7 @@ input:-webkit-autofill:active {
 .portfolio__container--project {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: #00171f;
+  background-color: var(--darkBlue);
 }
 .project {
   height: 20em;
@@ -233,7 +267,7 @@ input:-webkit-autofill:active {
 }
 .tech__desc a {
   text-decoration: underline;
-  color: white;
+  color: var(--brightText);
   font-size: 1.5em;
 }
 
@@ -249,10 +283,10 @@ input:-webkit-autofill:active {
 }
 .tech__image--tooltip {
   visibility: hidden;
-  color: white;
+  color: var(--brightText);
   position: absolute;
   z-index: 1;
-  background-color: #00171f;
+  background-color: var(--darkBlue);
   top: 100%;
   left: 50%;
   margin-left: -1.5em;
@@ -266,8 +300,8 @@ input:-webkit-autofill:active {
 .contact {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  color: white;
-  background-color: #00171f;
+  color: var(--brightText);
+  background-color: var(--darkBlue);
   text-align: center;
   padding-bottom: 10em;
   font-family: 'Roboto', sans-serif;
@@ -281,7 +315,7 @@ input:-webkit-autofill:active {
 .contact :nth-child(2) {
   display: grid;
   grid-template-rows: repeat(1fr 1fr 3fr);
-  color: white;
+  color: var(--brightText);
   width: 21em;
 }
 
@@ -290,7 +324,7 @@ input:-webkit-autofill:active {
   padding: 1em;
   width: 10em;
   border-radius: 10px;
-  color: white;
+  color: var(--brightText);
   margin-top: 1em;
   justify-self: center;
   transition-duration: 250ms;
@@ -300,8 +334,8 @@ input:-webkit-autofill:active {
   cursor: pointer;
 }
 footer {
-  color: white;
-  background-color: #00171f;
+  color: var(--brightText);
+  background-color: var(--darkBlue);
   text-align: center;
   padding: 2em 0 2em 0;
   display: grid;
@@ -347,8 +381,25 @@ footer {
     width: 100%;
     text-align: center;
   }
+  .aboutPage{
+    height: auto;
+    text-align: center;
+  }
+  .aboutPage__content{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+    text-align: center;
+    padding-bottom: 1em
+  }
+  .personalPic{
+    max-height: 10em;
+    min-height: 5em;
+    grid-row: 1;
+    justify-self: center;
+  }
   .descPage {
     grid-template-rows: 1fr 3fr;
+    height: auto
   }
   .descPage h1 {
     font-size: 2em;
@@ -391,7 +442,7 @@ footer {
     max-height: 8em;
   }
   .tech {
-    background-color: #00171f;
+    background-color: var(--darkBlue);
     padding: 1em 0 1em 0;
     grid-template-rows: 1fr 1fr
   }
