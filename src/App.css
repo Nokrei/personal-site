@@ -7,7 +7,7 @@
   --backBright: #dfdfdf;
   --darkBlue: #00171f;
   --brightBlue: #001c25;
-
+  --accentOrange: #de7119;
 }
 
 * {
@@ -129,14 +129,8 @@ input:-webkit-autofill:active {
   height: 60em;
   font-family: 'Roboto', sans-serif;
 }
-.line3{
-  height: 0.2em;
-  background-color: #de7119;
-  z-index: 99;
-  width: 100%; 
-}
 .aboutPage__container {
-  max-width: 70%;
+  max-width: 50%;
   justify-self: center;
   align-self: center;
 }
@@ -150,10 +144,27 @@ input:-webkit-autofill:active {
   grid-column-gap: 1em;
   text-align: left;
 }
+.animateUnderline {
+  color: #004d96;
+  text-decoration: none;
+  background-image: linear-gradient(var(--backBright), var(--backBright)),
+    linear-gradient(var(--backBright), var(--backBright)),
+    linear-gradient(var(--accentOrange), var(--accentOrange));
+  background-size: 20px 4px, 100% 4px, 0 4px;
+  background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 200ms linear, background-position 200ms linear;
+}
+
+.animateUnderline:hover {
+  background-size: 20px 4px, 0 4px, 100% 4px;
+  background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+}
+
 .personalPic {
-  min-height: 23em;
-  outline: 2em solid rgba(255, 255, 255, 0.8);
-  outline-offset: -2em;
+  max-height: 13.2em;
+  outline: 1em solid rgba(255, 255, 255, 0.8);
+  outline-offset: -1em;
 }
 .statPage {
   display: grid;
@@ -395,22 +406,16 @@ footer {
     height: auto;
     text-align: center;
   }
-  .line3{
-    height: 0.2em;
-    background-color: #de7119;
-    z-index: 99;
-    width: 100%; 
-    visibility: hidden;
-  }
+  
   .aboutPage__container {
     max-width: 90%;
     padding: 1em 0 1em 0 
   }
   .aboutPage__content{
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 2fr;
     text-align: center;
-    padding-bottom: 1em
+    margin-bottom: -3em
   }
   .personalPic{
     max-height: 10em;
@@ -419,6 +424,7 @@ footer {
     justify-self: center;
     outline: 1em solid rgba(231, 231, 231, 0.9);
   outline-offset: -1em;
+  margin-bottom: 1em;
   }
   .descPage {
     grid-template-rows: 1fr 3fr;
