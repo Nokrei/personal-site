@@ -27,7 +27,7 @@ import nodeLogo from '../images/node-logo.png';
 import mongoLogo from '../images/mongo-logo.png';
 import webpackLogo from '../images/webpack-logo.png';
 import expressLogo from '../images/express-logo.png';
-import parc from '../images/parcel.svg';
+
 const Portfolio = () => {
   return (
     <div className="portfolio" id="portfolio">

@@ -38,12 +38,12 @@ const AboutPage = () => {
             </a>{' '}
             or use the{' '}
             <a className="animateUnderline" href="#contact">
-              Conact form
+              Contact form
             </a>{' '}
-            bellow.
+            below.
           </p>
           
-          <picture >
+          <picture className="personalPic__container">
             <source srcSet={personalWe} type="image/webp" />
             <source srcSet={personalJp} type="image/jp2" />
             <source srcSet={personalPn} type="image/png" />
