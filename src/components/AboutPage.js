@@ -1,5 +1,7 @@
 import React from 'react';
-import personal from '../images/personal.png';
+import personalJp from '../images/personal.jp2';
+import personalPn from '../images/personal.png';
+import personalWe from '../images/personal.webp';
 
 const AboutPage = () => {
   return (
@@ -28,16 +30,25 @@ const AboutPage = () => {
               LinkedIn
             </a>
             ,{' '}
-            <a className="animateUnderline" href="mailto:pmrozowski87@gmail.com">
+            <a
+              className="animateUnderline"
+              href="mailto:pmrozowski87@gmail.com"
+            >
               email me
             </a>{' '}
             or use the{' '}
-            <a className="animateUnderline" href='#contact'>
+            <a className="animateUnderline" href="#contact">
               Conact form
             </a>{' '}
             bellow.
           </p>
-          <img className="personalPic" src={personal} />
+          
+          <picture >
+            <source srcSet={personalWe} type="image/webp" />
+            <source srcSet={personalJp} type="image/jp2" />
+            <source srcSet={personalPn} type="image/png" />
+            <img className="personalPic" src={personalPn} alt="Piotr Mrozowski" />
+          </picture>
         </div>
       </div>
     </div>

@@ -4,10 +4,17 @@ const ProjectCard = (props) => {
   return (
     <div className="portfolio__container--project">
       <div className="project">
-        <img
-          className="portfolio__container--project--image"
-          src={props.image}
-        />
+        <picture>
+          <source srcSet={props.we} type="image/webp" />
+          <source srcSet={props.jp} type="image/jp2" />
+          <source srcSet={props.pn} type="image/png" />
+          <img
+            className="portfolio__container--project--image"
+            src={props.image}
+            alt="Piotr Mrozowski"
+          />
+        </picture>
+        
       </div>
       <div className="tech">
         <div className="tech__desc">
@@ -18,7 +25,12 @@ const ProjectCard = (props) => {
             <br />
           </a>
           <br />
-          <p className='portfolio__container--desc'style={{ overflowY:'scroll',}}>{props.desc}</p>
+          <p
+            className="portfolio__container--desc"
+            style={{ overflowY: 'scroll' }}
+          >
+            {props.desc}
+          </p>
         </div>
 
         <div className="tech__content">
