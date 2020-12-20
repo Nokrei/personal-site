@@ -31,7 +31,7 @@ import expressLogo from '../images/express-logo.png';
 const Portfolio = () => {
   return (
     <div className="portfolio" id="portfolio">
-      <div className="blurLine2"></div>
+      
       <h1>PORTFOLIO</h1>
       <div className="portfolio__container">
       <ProjectCard

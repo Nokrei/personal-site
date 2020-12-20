@@ -114,8 +114,7 @@ const Contact = () => {
   const classes = useStyles();
 
   return (
-    <div className="contact" id="contact">
-      <div className="blurLine3"></div>
+    <div className="contact" id="contact"> 
       <h1>Contact me</h1>
       <div className={classes.root} noValidate >
         <CssTextField

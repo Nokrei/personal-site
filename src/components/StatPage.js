@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import useInterval from './useInterval';
+import React from 'react';
+
 import Counter from './Counter';
-import PublicOutlinedIcon from '@material-ui/icons/PublicOutlined';
+
 const StatPage = () => {
   return (
     <div className="statPage__container">
-      <div className="blurLine4"></div>
       <div className='statPage '>
       <div >
         
@@ -28,7 +27,7 @@ const StatPage = () => {
     />
       </div>
        
-    <p>They are your potential <br></br> customers</p>
+    
     </div>
     </div>
     

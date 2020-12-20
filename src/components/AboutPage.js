@@ -6,7 +6,7 @@ import personalWe from '../images/personal.webp';
 const AboutPage = () => {
   return (
     <div className="aboutPage" id="aboutPage">
-      <div className="blurLine1"></div>
+     
       <div className="aboutPage__container">
         
         <h1>ABOUT ME</h1>

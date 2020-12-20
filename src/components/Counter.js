@@ -18,7 +18,7 @@ const Counter = (props) => {
   }, delay);
 
   return ( 
-      <div><span className='statPage--number'>{count}{props.text}</span><br></br>{props.text2}</div>
+      <div><div className='statPage--number'>{count}{props.text}</div><br></br>{props.text2}</div>
   );
 };
 
