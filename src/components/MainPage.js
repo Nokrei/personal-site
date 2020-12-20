@@ -58,6 +58,7 @@ const MainPage = () => {
         <span>Web Development</span> <br />
         <span>With</span> <br /> <span>a Passion</span>
       </div>
+      
     </div>
   );
 };

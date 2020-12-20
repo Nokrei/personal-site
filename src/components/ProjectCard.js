@@ -19,9 +19,9 @@ const ProjectCard = (props) => {
       <div className="tech">
         <div className="tech__desc">
           <h2>{props.title}</h2>
-          <a href={props.link} target="blank">
+          <a href={props.link} target="blank" className="animateLink">
             <br />
-            Link
+            {props.linkDesc}
             <br />
           </a>
           <br />

@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import useInterval from './useInterval';
 import Counter from './Counter';
+import PublicOutlinedIcon from '@material-ui/icons/PublicOutlined';
 const StatPage = () => {
   return (
-    <div className='statPage '>
-      <div>
+    <div className="statPage__container">
+      <div className="blurLine4"></div>
+      <div className='statPage '>
+      <div >
+        
       <Counter
         delay={1}
         max={4648118067}
@@ -24,8 +28,10 @@ const StatPage = () => {
     />
       </div>
        
-    <p>They are your potential <br></br> Customers</p>
+    <p>They are your potential <br></br> customers</p>
     </div>
+    </div>
+    
   );
 };
 

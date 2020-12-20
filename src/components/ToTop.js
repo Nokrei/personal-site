@@ -56,7 +56,7 @@ ScrollTop.propTypes = {
           <React.Fragment>
                <ScrollTop {...props}>
         <Fab  size="small" aria-label="scroll back to top" style={{
-            backgroundColor:'#de7119'
+            backgroundColor:'var(--accentOrange)'
         }}>
           <KeyboardArrowUpIcon />
         </Fab>

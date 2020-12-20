@@ -31,13 +31,15 @@ import expressLogo from '../images/express-logo.png';
 const Portfolio = () => {
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
+      <div className="blurLine2"></div>
+      <h1>PORTFOLIO</h1>
       <div className="portfolio__container">
       <ProjectCard
-          title="Book Search App"
+          title="BOOK SEARCH APP"
           desc="A Book search application.The user can search by title, author or ISBN. They can then click on the author's name and go to the writer's details page, where they can also see all the author's books.
           The Goodreads API powering the search gave me some problems - the response is in XML so I had to parse it to JSON, they do not include the CORS header in ANY of their API calls, so I had to route the request through cors-anywhere.herokuapp, and it has a rate limit of one request per second, that's why I didn't make the results load with every key stroke, also I have spent about half a day in total resetting the API key, and waiting for it to let me use it again - been getting the 429 error a lot while testing calls. "
           link="https://pm-goodreads-app.netlify.app/"
+          linkDesc="https://pm-goodreads-app.netlify.app/"
           image={bookSearchPn}
           we={bookSearchWe}
           jp={bookSearchJp}
@@ -56,10 +58,11 @@ const Portfolio = () => {
           tooltip6="Webpack"
         />
         <ProjectCard
-          title="Fitness App"
+          title="FITNESS APP"
           desc="A Fitness Application. It is composed of a variety of fitness calculators such as BMI, BMR, Body Fat Percentage. The user can also calculate calories spent during exercise and meal macronutrients.
           I made the App using ReactJS, majority of the styling is done with the use of Material UI. The responsiveness is executed via a custom hook."
           link="https://nok-fitness.netlify.app/"
+          linkDesc="https://nok-fitness.netlify.app/"
           image={fitnessPn}
           we={fitnessWe}
           jp={fitnessJp}
@@ -78,9 +81,10 @@ const Portfolio = () => {
           tooltip6="Webpack"
         />
         <ProjectCard
-          title="Diving Center website"
+          title="DIVIGN CENTER WEBSITE"
           desc="The final team project for my full-stack coding bootcamp. "
           link="https://diving-project-front.herokuapp.com/"
+          linkDesc="https://diving-project-front.herokuapp.com/"
           image={divingPn}
           we={divingWe}
           jp={divingJp}
@@ -106,9 +110,10 @@ const Portfolio = () => {
         />
 
         <ProjectCard
-          title="Image Search App"
+          title="IMAGE SEARCH APP"
           desc="An image search web application. It uses the Unsplash API to display imagaes searched by the user. Infinite scrolling is acheved via the implementation of a custom React hook, the layout and loading-in animation by the use of the StackGrid library. Number of searches limited due to using the free variant of the Unsplash API."
           link="https://react-unsplash-app.netlify.app/"
+          linkDesc="https://react-unsplash-app.netlify.app/"
           image={unsplashPn}
           we={unsplashWe}
           jp={unsplashJp}
@@ -125,9 +130,10 @@ const Portfolio = () => {
           tooltip5="NPM"
         />
         <ProjectCard
-          title="Weather App"
+          title="WEATHER APP"
           desc="A weather web application. Initially it uses the locationiq API to detect user's position and display the weather for that location. It also uses the openweather API to display the weather forecast for any location searched by the user. Number of searches limited due to using free variants of the APIs."
           link="https://pm-react-weather-app.netlify.app/"
+          linkDesc="https://pm-react-weather-app.netlify.app/"
           image={weatherPn}
           we={weatherWe}
           jp={weatherJp}
@@ -144,9 +150,10 @@ const Portfolio = () => {
           tooltip5="NPM"
         />
         <ProjectCard
-          title="Documentation Page"
+          title="DOCUMENTATION PAGE"
           desc="A simple documentation page for JavaScript"
           link="https://codepen.io/Nokrei/full/rXygyq"
+          linkDesc="https://codepen.io/Nokrei/full/rXygyq"
           image={documentationPn}
           we={documentationWe}
           jp={documentationJp}

@@ -67,7 +67,7 @@ const Contact = () => {
   const CssTextField = withStyles({
     root: {
       '& label.Mui-focused': {
-        color: '#de7119',
+        color: 'var(--accentOrange)',
       },
       '& label': {
         color: 'white',
@@ -87,10 +87,10 @@ const Contact = () => {
           width: '20em',
         },
         '&:hover fieldset': {
-          borderColor: '#de7119',
+          borderColor: 'var(--accentOrange)',
         },
         '&.Mui-focused fieldset': {
-          borderColor: '#de7119',
+          borderColor: 'var(--accentOrange)',
         },
       },
     },
@@ -115,6 +115,7 @@ const Contact = () => {
 
   return (
     <div className="contact" id="contact">
+      <div className="blurLine3"></div>
       <h1>Contact me</h1>
       <div className={classes.root} noValidate >
         <CssTextField
