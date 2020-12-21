@@ -128,7 +128,7 @@ input:-webkit-autofill:active {
   color: var(--darkText);
   text-align: center;
   display: grid;
-  height: 35em;
+  min-height: 35em;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -146,6 +146,17 @@ input:-webkit-autofill:active {
   grid-template-columns: 4fr 1fr;
   grid-column-gap: 1em;
   text-align: left;
+}
+.aboutPage__content p{
+  max-height: 13.2em;
+  overflow-y: scroll;
+}
+.aboutPage__content p::-webkit-scrollbar {
+  width: 2px;
+  background-color: var(--backBright);
+}
+.aboutPage__content p::-webkit-scrollbar-thumb {
+  background-color: var(--brightText);
 }
 .animateUnderline {
   color: #004d96;
@@ -292,10 +303,12 @@ input:-webkit-autofill:active {
 .project {
   max-height: 30em;
   max-width: 52em;
+  
 }
 .portfolio__container--project--image {
   max-height: 30em;
   max-width: 52em;
+  
 }
 .portfolio__container--project--tech {
   height: 3em;
@@ -310,7 +323,7 @@ input:-webkit-autofill:active {
   background-color: var(--accentOrange);
 }
 .tech {
-  max-height: 30em;
+  max-height: 40em;
   max-width: 52em;
   display: grid;
   grid-template-rows: 2fr 1fr;
@@ -468,6 +481,10 @@ footer {
     text-align: center;
     background-color: var(--backBright);
     height:auto
+  }
+  .aboutPage__content p{
+    max-height: 13.2em;
+    overflow-y: visible;
   }
   
   .aboutPage__container {
