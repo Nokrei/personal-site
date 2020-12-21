@@ -1,5 +1,5 @@
 import React from 'react';
-
+import GitHubIcon from '@material-ui/icons/GitHub';
 const ProjectCard = (props) => {
   return (
     <div className="portfolio__container--project">
@@ -24,6 +24,11 @@ const ProjectCard = (props) => {
             {props.linkDesc}
             <br />
           </a>
+          <br/>
+          <a href={props.gitLink} target="blank">
+            <GitHubIcon/>
+          </a>
+          <br/>
           <br />
           <p
             className="portfolio__container--desc"
