@@ -290,12 +290,12 @@ input:-webkit-autofill:active {
   
 }
 .project {
-  height: 30em;
-  width: 40em;
+  max-height: 30em;
+  max-width: 52em;
 }
 .portfolio__container--project--image {
-  height: 30em;
-  width: 52em;
+  max-height: 30em;
+  max-width: 52em;
 }
 .portfolio__container--project--tech {
   height: 3em;
@@ -310,6 +310,8 @@ input:-webkit-autofill:active {
   background-color: var(--accentOrange);
 }
 .tech {
+  max-height: 30em;
+  max-width: 52em;
   display: grid;
   grid-template-rows: 2fr 1fr;
   padding: 2em;
@@ -331,7 +333,10 @@ input:-webkit-autofill:active {
   background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
   color: var(--darkText)
 }
-
+.tech__desc{
+  max-height: 10em;
+  max-width: 52em;
+}
 .tech__content {
   justify-self: left;
   margin-top:2em
