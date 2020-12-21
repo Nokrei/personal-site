@@ -81,7 +81,7 @@ const Portfolio = () => {
           tooltip6="Webpack"
         />
         <ProjectCard
-          title="DIVIGN CENTER WEBSITE"
+          title="DIVIGN CENTER"
           desc="The final team project for my full-stack coding bootcamp. "
           link="https://diving-project-front.herokuapp.com/"
           linkDesc="https://diving-project-front.herokuapp.com/"
@@ -149,20 +149,7 @@ const Portfolio = () => {
           tooltip4="JavaScript"
           tooltip5="NPM"
         />
-        <ProjectCard
-          title="DOCUMENTATION PAGE"
-          desc="A simple documentation page for JavaScript"
-          link="https://codepen.io/Nokrei/full/rXygyq"
-          linkDesc="https://codepen.io/Nokrei/full/rXygyq"
-          image={documentationPn}
-          we={documentationWe}
-          jp={documentationJp}
-          pn={documentationPn}
-          stack1={html}
-          stack2={css}
-          tooltip1="HTML5"
-          tooltip2="CSS3"
-        />
+        
       </div>
     </div>
   );

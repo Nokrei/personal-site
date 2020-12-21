@@ -6,7 +6,7 @@ const MainPage = () => {
   const { width } = useWindowDimensions();
   return (
     <div className="mainPage" id='mainPage'>
-      {width > 600 && 
+      {width > 1025 && 
          <Particles
          style={{ position: 'absolute' }}
          params={{

@@ -377,7 +377,6 @@ input:-webkit-autofill:active {
   grid-template-rows: 1fr 2fr;
   color: var(--brightText);
   background-color: var(--darkBlue);
-  
   padding-bottom: 7em;
   font-family: 'Roboto', sans-serif;
   justify-items: center;
@@ -414,6 +413,7 @@ footer {
   color: var(--brightText);
   background-color: var(--darkBlue);
   text-align: center;
+  justify-items: center;
   padding: 2em 0 2em 0;
   display: grid;
   font-family: 'Lora', serif;
@@ -571,4 +571,8 @@ footer {
     grid-row-gap: 1em;
     margin-bottom: 1em;
   }
+  .contact :nth-child(2){
+    max-width:18em;
+  }
+  
 }
