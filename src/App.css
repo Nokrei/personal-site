@@ -128,7 +128,7 @@ input:-webkit-autofill:active {
   color: var(--darkText);
   text-align: center;
   display: grid;
-  min-height: 35em;
+  height: 35em;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -147,17 +147,7 @@ input:-webkit-autofill:active {
   grid-column-gap: 1em;
   text-align: left;
 }
-.aboutPage__content p{
-  max-height: 13.2em;
-  overflow-y: scroll;
-}
-.aboutPage__content p::-webkit-scrollbar {
-  width: 2px;
-  background-color: var(--backBright);
-}
-.aboutPage__content p::-webkit-scrollbar-thumb {
-  background-color: var(--brightText);
-}
+
 .animateUnderline {
   color: #004d96;
   text-decoration: none;
